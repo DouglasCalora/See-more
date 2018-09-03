@@ -1,0 +1,36 @@
+.Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: flex-start;
+  transition: max-height 600ms; }
+  .Grid-cell {
+    width: 250px; }
+  .Grid-image {
+    width: 100%;
+    display: block; }
+
+.Button {
+  width: 100%; }
+
+.isnt-loaded {
+  position: relative; }
+  .isnt-loaded::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    color: red;
+    vertical-align: middle;
+    background-color: gray; }
+
+.Container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
+  width: calc(100% - 50px); }
+
+/*# sourceMappingURL=style.css.map */

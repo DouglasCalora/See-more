@@ -1,0 +1,45 @@
+.Grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: flex-start;
+  transition: max-height 600ms;
+  // margin: -10px;
+
+  &-cell {
+    // padding: 10px;
+    width: 250px;
+  }
+
+  &-image {
+    width: 100%;
+    display: block;
+  }
+
+  .see-more & {
+    // transition: max-height 2s;
+  }
+}
+
+.Button {
+  width: 100%;
+}
+
+.isnt-loaded {
+  position: relative;
+
+  &::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // content: 'Não foi possivel carregar';
+    text-align: center;
+    color: red;
+    vertical-align: middle;
+    background-color: gray;
+  }
+}
